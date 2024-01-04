@@ -10,14 +10,14 @@ const router = express.Router();
 
 const auth = (req, res, next) => {
     var origin = req.get('origin');
-    if (origin === "https://blackandbelonging.com") {
+  //  if (origin === "https://blackandbelonging.com") {
         next();
-    }
-    else {
-        res.send({
-            message: "origin doesn't match",
-        })
-    }
+   // }
+    // else {
+    //     res.send({
+    //         message: "origin doesn't match",
+    //     })
+    // }
 }
 
 
